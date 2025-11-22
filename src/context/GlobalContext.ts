@@ -7,6 +7,7 @@ type GlobalContext = {
   onUpdateSpecialCharacters: (param: string) => void;
   generatedPassword: string;
   onGeneratePassword: () => void;
+  passwordElementRef: React.MutableRefObject<HTMLParagraphElement | null>;
 };
 
 export const GlobalContext = createContext<GlobalContext>({} as GlobalContext);

@@ -1,4 +1,4 @@
-import { ReactNode, useState } from 'react';
+import { ReactNode, useRef, useState } from 'react';
 
 import { GlobalContext } from './GlobalContext';
 import { lowercase, upperCase, numbers, symbols } from '@/consts/characters';
@@ -11,6 +11,7 @@ export const GlobalProvider = ({ children }: GlobalProviderPropTypes) => {
   const [characterLength, setCharacterLength] = useState(10);
   const [specialCharacters, setSpecialCharacters] = useState<string[]>([]);
   const [generatedPassword, setGeneratedPassword] = useState('');
+  const passwordElementRef = useRef<HTMLParagraphElement | null>(null);
 
   const onUpdateCharacterLength = (characterLengthToUpdate: number) => {
     setCharacterLength(characterLengthToUpdate);
@@ -69,6 +70,7 @@ export const GlobalProvider = ({ children }: GlobalProviderPropTypes) => {
     onUpdateSpecialCharacters,
     generatedPassword,
     onGeneratePassword,
+    passwordElementRef,
   };
 
   return (
