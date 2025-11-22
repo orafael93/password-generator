@@ -33,5 +33,15 @@ export const Button = styled.button`
       color: ${theme.colors.neonGreen};
       border-color: ${theme.colors.neonGreen};
     }
+
+    &:disabled {
+      cursor: not-allowed;
+      background: #817d92;
+    }
+
+    &:disabled:hover {
+      border-color: #817d92;
+      color: ${theme.colors.grey.dark};
+    }
   `}
 `;

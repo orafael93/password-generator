@@ -1,10 +1,12 @@
-import CharacterLength from './components/CharacterLength';
-import CharacterStrength from './components/CharacterStrength';
-import { ContentWrapper } from './components/ContentWrapper';
-import MainWrapper from './components/MainWrapper';
-import PasswordField from './components/PasswordField';
-import WrapperCheckboxes from './components/WrapperCheckboxes';
+import { Button } from './components/Button';
+import { MainWrapper } from './components/MainWrapper';
+import { PasswordField } from './components/PasswordField';
 import { GlobalProvider } from './context/GlobalProvider';
+import { ContentWrapper } from './components/ContentWrapper';
+import { CharacterLength } from './components/CharacterLength';
+import { CharacterStrength } from './components/CharacterStrength';
+import { CheckboxesWrapper } from './components/WrapperCheckboxes';
+
 import { AppName } from './styles/globalStyles';
 
 function App() {
@@ -15,8 +17,9 @@ function App() {
         <PasswordField />
         <ContentWrapper>
           <CharacterLength />
-          <WrapperCheckboxes />
+          <CheckboxesWrapper />
           <CharacterStrength />
+          <Button>Generate</Button>
         </ContentWrapper>
       </MainWrapper>
     </GlobalProvider>

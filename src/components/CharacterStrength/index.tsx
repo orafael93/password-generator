@@ -3,7 +3,7 @@ import { useVerifyCharacterLength } from '../../hooks/useVerifyCharacterLength';
 
 import * as S from './styles';
 
-const CharacterStrength = () => {
+export const CharacterStrength = () => {
   const { characterLength } = useGlobalState();
 
   const { characterLengthText, visualRetangles } =
@@ -21,5 +21,3 @@ const CharacterStrength = () => {
     </S.WrapperCharacterStrength>
   );
 };
-
-export default CharacterStrength;

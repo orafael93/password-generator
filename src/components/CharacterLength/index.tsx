@@ -4,7 +4,7 @@ import { useGlobalState } from '../../hooks/useGlobalState';
 
 import * as S from './styles';
 
-const CharacterLength = () => {
+export const CharacterLength = () => {
   const { characterLength, onUpdateCharacterLength } = useGlobalState();
   const [backgroundSize, setBackgroundSize] = useState('50% 100%');
 
@@ -25,7 +25,7 @@ const CharacterLength = () => {
   return (
     <S.WrapperCharacterLength>
       <S.WrapperCharacterLengthNumber>
-        <S.CharacterLengthText>Character Length</S.CharacterLengthText>
+        <S.CharacterLengthText>Characters Length</S.CharacterLengthText>
         <S.CharacterLengthNumber>{characterLength}</S.CharacterLengthNumber>
       </S.WrapperCharacterLengthNumber>
       <S.CharacterRange
@@ -38,5 +38,3 @@ const CharacterLength = () => {
     </S.WrapperCharacterLength>
   );
 };
-
-export default CharacterLength;
