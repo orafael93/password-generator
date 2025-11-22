@@ -30,7 +30,7 @@ export const PasswordField = () => {
 
   return (
     <S.WrapperPasswordField>
-      <S.PasswordContent ref={passwordElementRef}>
+      <S.PasswordContent copied={copied} ref={passwordElementRef}>
         {generatedPassword || 'P4$5W0rD!'}
       </S.PasswordContent>
       <S.CopyIconWrapper

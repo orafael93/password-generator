@@ -21,16 +21,22 @@ export const WrapperPasswordField = styled.div`
   `}
 `;
 
-export const PasswordContent = styled.p`
-  ${({ theme }) => css`
-    color: ${theme.colors.grey.grey};
+type PasswordContentType = {
+  copied: boolean;
+};
+
+export const PasswordContent = styled.p<PasswordContentType>`
+  ${({ theme, copied }) => css`
+    color: ${copied ? theme.colors.grey.almostWhite : theme.colors.grey.grey};
     font-size: clamp(0.9rem, 1.3vw, 1.3rem);
+
+    transition: 0.2s;
 
     letter-spacing: 1px;
   `}
 `;
 
-type CopyIconWrapper = {
+type CopyIconWrapperType = {
   copied: boolean;
 };
 
@@ -56,7 +62,7 @@ const showCopied = keyframes`
     }
 `;
 
-export const CopyIconWrapper = styled.div<CopyIconWrapper>`
+export const CopyIconWrapper = styled.div<CopyIconWrapperType>`
   ${({ theme, copied }) => css`
     display: flex;
     align-items: center;
