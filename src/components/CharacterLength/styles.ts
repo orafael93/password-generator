@@ -65,13 +65,14 @@ export const WrapperCharacterLengthNumber = styled.div`
 `;
 
 export const CharacterLengthText = styled.p`
-  font-size: 18px;
+  font-size: clamp(0.95rem, 1.2vw, 1.15rem);
   font-weight: 700;
 `;
 
 export const CharacterLengthNumber = styled.p`
   ${({ theme }) => css`
-    font-size: 32px;
+    font-size: clamp(1.5rem, 2vw, 2rem);
+
     font-weight: 700;
     color: ${theme.colors.neonGreen};
   `}

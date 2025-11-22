@@ -4,7 +4,7 @@ export const AppName = styled.h1`
   ${({ theme }) => css`
     text-align: center;
     font-weight: bold;
-    font-size: 24px;
+    font-size: clamp(1.5rem, 4.5vw, 2.5rem);
 
     color: ${theme.colors.grey.grey};
   `}

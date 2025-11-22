@@ -5,6 +5,8 @@ export const Wrapper = styled.label`
   align-items: center;
   gap: 20px;
 
+  font-size: clamp(0.95rem, 1.2vw, 1.15rem);
+
   cursor: pointer;
 `;
 

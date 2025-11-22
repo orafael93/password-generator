@@ -9,6 +9,8 @@ export const WrapperCharacterStrength = styled.div`
     background: ${theme.colors.grey.veryDark};
     padding: 30px 25px;
 
+    gap: 5px;
+
     margin-top: 30px;
   `}
 `;
@@ -19,7 +21,8 @@ export const StrengthText = styled.p`
 
     color: ${theme.colors.grey.grey};
 
-    font-size: 18px;
+    font-size: clamp(0.95rem, 1.2vw, 1.15rem);
+
     font-weight: bold;
   `}
 `;
@@ -35,7 +38,7 @@ export const VisualStrengthText = styled.span`
   ${({ theme }) => css`
     color: ${theme.colors.almostWhite};
 
-    font-size: 24px;
+    font-size: clamp(0.95rem, 1.2vw, 1.15rem);
     font-weight: 700;
 
     text-transform: uppercase;

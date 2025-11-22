@@ -15,7 +15,7 @@ export const Button = styled.button`
     color: ${theme.colors.grey.dark};
 
     text-transform: uppercase;
-    font-size: 18px;
+    font-size: clamp(0.9rem, 1.5vw, 1.1rem);
     font-weight: bold;
 
     border: 2px solid transparent;
