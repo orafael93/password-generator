@@ -1,13 +1,15 @@
 import { ReactNode, useRef, useState } from 'react';
 
-import { GlobalContext } from './GlobalContext';
+import { GlobalContext } from '@/context/GlobalContext';
 import { lowercase, upperCase, numbers, symbols } from '@/consts/characters';
 
 type GlobalProviderPropTypes = {
   children: ReactNode;
 };
 
-export const GlobalProvider = ({ children }: GlobalProviderPropTypes) => {
+export const GlobalProvider = (props: GlobalProviderPropTypes) => {
+  const { children } = props;
+
   const [characterLength, setCharacterLength] = useState(10);
   const [specialCharacters, setSpecialCharacters] = useState<string[]>([]);
   const [generatedPassword, setGeneratedPassword] = useState('');
