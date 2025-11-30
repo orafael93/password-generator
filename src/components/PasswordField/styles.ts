@@ -22,7 +22,7 @@ export const PasswordFieldWrapper = styled.div`
 `;
 
 type PasswordContentType = {
-  copied: boolean;
+  copied?: boolean;
 };
 
 export const PasswordContent = styled.p<PasswordContentType>`
@@ -37,7 +37,7 @@ export const PasswordContent = styled.p<PasswordContentType>`
 `;
 
 type CopyIconWrapperType = {
-  copied: boolean;
+  copied?: boolean;
 };
 
 const showCopied = keyframes`

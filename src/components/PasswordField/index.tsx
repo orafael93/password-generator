@@ -32,11 +32,11 @@ export const PasswordField = () => {
 
   return (
     <S.PasswordFieldWrapper>
-      <S.PasswordContent copied={copied} ref={passwordElementRef}>
+      <S.PasswordContent copied={copied || undefined} ref={passwordElementRef}>
         {generatedPassword || 'P4$5W0rD!'}
       </S.PasswordContent>
       <S.CopyIconWrapper
-        copied={copied}
+        copied={copied || undefined}
         onClick={() => {
           if (!isAnimating) {
             onCopyPassword();
