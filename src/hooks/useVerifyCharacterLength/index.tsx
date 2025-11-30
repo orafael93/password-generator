@@ -1,7 +1,7 @@
 import { Fragment } from 'react';
 import { useTheme } from 'styled-components';
 
-import { VisualStrengthRetangles } from '../../components/CharacterStrength/styles';
+import { VisualStrengthRetangles } from '@/components/CharacterStrength/styles';
 
 export const useVerifyCharacterLength = (characterLength: number) => {
   const theme = useTheme();
@@ -15,13 +15,13 @@ export const useVerifyCharacterLength = (characterLength: number) => {
       characterLengthText: 'Too Weak!',
       visualRetangles: (
         <Fragment>
-          {retanglesArray.map((_, index) => {
-            return index < 1 ? (
+          {retanglesArray.map((_, index) =>
+            index < 1 ? (
               <VisualStrengthRetangles color={theme?.colors.red} key={index} />
             ) : (
               <VisualStrengthRetangles key={index} />
-            );
-          })}
+            ),
+          )}
         </Fragment>
       ),
     };
@@ -32,16 +32,16 @@ export const useVerifyCharacterLength = (characterLength: number) => {
       characterLengthText: 'Weak!',
       visualRetangles: (
         <Fragment>
-          {retanglesArray.map((_, index) => {
-            return index < 2 ? (
+          {retanglesArray.map((_, index) =>
+            index < 2 ? (
               <VisualStrengthRetangles
                 color={theme?.colors.orange}
                 key={index}
               />
             ) : (
               <VisualStrengthRetangles key={index} />
-            );
-          })}
+            ),
+          )}
         </Fragment>
       ),
     };
@@ -52,16 +52,16 @@ export const useVerifyCharacterLength = (characterLength: number) => {
       characterLengthText: 'Medium',
       visualRetangles: (
         <Fragment>
-          {retanglesArray.map((_, index) => {
-            return index < 3 ? (
+          {retanglesArray.map((_, index) =>
+            index < 3 ? (
               <VisualStrengthRetangles
                 color={theme?.colors.yellow}
                 key={index}
               />
             ) : (
               <VisualStrengthRetangles key={index} />
-            );
-          })}
+            ),
+          )}
         </Fragment>
       ),
     };
