@@ -24,11 +24,11 @@ export const CharacterLength = () => {
   };
 
   return (
-    <S.WrapperCharacterLength>
-      <S.WrapperCharacterLengthNumber>
+    <div>
+      <S.CharacterLengthNumberWrapper>
         <S.CharacterLengthText>Characters Length</S.CharacterLengthText>
         <S.CharacterLengthNumber>{characterLength}</S.CharacterLengthNumber>
-      </S.WrapperCharacterLengthNumber>
+      </S.CharacterLengthNumberWrapper>
       <S.CharacterRange
         min={0}
         max={20}
@@ -36,6 +36,6 @@ export const CharacterLength = () => {
         onChange={handleInputChange}
         percentfilled={backgroundSize}
       />
-    </S.WrapperCharacterLength>
+    </div>
   );
 };

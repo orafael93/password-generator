@@ -1,7 +1,5 @@
 import styled, { css } from 'styled-components';
 
-export const WrapperCharacterLength = styled.div``;
-
 type CharacterRangePropTypes = {
   percentfilled: string;
 };
@@ -56,7 +54,7 @@ export const CharacterRange = styled.input.attrs({
   `}
 `;
 
-export const WrapperCharacterLengthNumber = styled.div`
+export const CharacterLengthNumberWrapper = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
