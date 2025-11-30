@@ -1,4 +1,4 @@
-export type WrapperCheckboxTypes = {
+export type CheckboxTypesWrapper = {
   id: string;
   isChecked: boolean;
 };

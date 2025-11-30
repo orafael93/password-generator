@@ -5,7 +5,7 @@ import { GlobalProvider } from './context/GlobalProvider';
 import { ContentWrapper } from './components/ContentWrapper';
 import { CharacterLength } from './components/CharacterLength';
 import { CharacterStrength } from './components/CharacterStrength';
-import { CheckboxesWrapper } from './components/WrapperCheckboxes';
+import { CheckboxesWrapper } from './components/CheckboxesWrapper';
 
 import { AppName } from './styles/globalStyles';
 

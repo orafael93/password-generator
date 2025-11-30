@@ -1,16 +1,17 @@
 import { checkboxes } from '@/consts/checkboxes';
 
 import { useGlobalState } from '@/hooks/useGlobalState';
-import { IncludesCheckbox } from '../IncludesCheckbox';
-import { WrapperCheckboxTypes } from './types';
+import { IncludesCheckbox } from '@/components/IncludesCheckbox';
+
+import { CheckboxTypesWrapper } from './types';
 
 import * as S from './styles';
 
 export const CheckboxesWrapper = () => {
   const { onUpdateSpecialCharacters } = useGlobalState();
 
-  const handleCharacterCheckbox = ({ id }: WrapperCheckboxTypes) => {
-    onUpdateSpecialCharacters(id);
+  const handleCharacterCheckbox = (param: CheckboxTypesWrapper) => {
+    onUpdateSpecialCharacters(param.id);
   };
 
   return (
