@@ -7,15 +7,17 @@ import * as S from './styles';
 
 export const PasswordField = () => {
   const { generatedPassword, passwordElementRef } = useGlobalState();
+
   const [copied, setCopied] = useState(false);
   const [isAnimating, setIsAnimating] = useState(false);
 
-  const handleCopy = async () => {
+  const onCopyPassword = async () => {
     const generatedPassword =
       (passwordElementRef && passwordElementRef.current?.textContent) || '';
 
     try {
       await navigator.clipboard.writeText(generatedPassword);
+
       setCopied(true);
       setIsAnimating(true);
 
@@ -29,7 +31,7 @@ export const PasswordField = () => {
   };
 
   return (
-    <S.WrapperPasswordField>
+    <S.PasswordFieldWrapper>
       <S.PasswordContent copied={copied} ref={passwordElementRef}>
         {generatedPassword || 'P4$5W0rD!'}
       </S.PasswordContent>
@@ -37,12 +39,12 @@ export const PasswordField = () => {
         copied={copied}
         onClick={() => {
           if (!isAnimating) {
-            handleCopy();
+            onCopyPassword();
           }
         }}
       >
         <CopyIcon />
       </S.CopyIconWrapper>
-    </S.WrapperPasswordField>
+    </S.PasswordFieldWrapper>
   );
 };

@@ -1,6 +1,6 @@
 import styled, { css, keyframes } from 'styled-components';
 
-export const WrapperPasswordField = styled.div`
+export const PasswordFieldWrapper = styled.div`
   ${({ theme }) => css`
     display: grid;
     grid-template-columns: 1fr 20px;
