@@ -32,6 +32,7 @@ export const CharacterLength = () => {
       <S.CharacterRange
         min={0}
         max={20}
+        aria-label="Character range"
         value={characterLength}
         onChange={handleInputChange}
         percentfilled={backgroundSize}
