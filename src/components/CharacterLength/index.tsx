@@ -1,16 +1,17 @@
 import { useState } from 'react';
 
-import { useGlobalState } from '../../hooks/useGlobalState';
+import { useGlobalState } from '@/hooks/useGlobalState';
 
 import * as S from './styles';
 
 export const CharacterLength = () => {
   const { characterLength, onUpdateCharacterLength } = useGlobalState();
+
   const [backgroundSize, setBackgroundSize] = useState('50% 100%');
 
-  const handleInputChange = ({
-    target,
-  }: React.ChangeEvent<HTMLInputElement>) => {
+  const handleInputChange = (param: React.ChangeEvent<HTMLInputElement>) => {
+    const { target } = param;
+
     const minValue = Number(target.min);
     const maxValue = Number(target.max);
     const currentValue = Number(target.value);
