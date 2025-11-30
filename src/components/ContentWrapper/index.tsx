@@ -1,5 +1,5 @@
 import * as S from './styles';
 
-export const ContentWrapper = ({ children }: { children: React.ReactNode }) => (
-  <S.WrapperContent>{children}</S.WrapperContent>
+export const ContentWrapper = (props: { children: React.ReactNode }) => (
+  <S.ContentWrapper>{props.children}</S.ContentWrapper>
 );
