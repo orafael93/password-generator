@@ -2,6 +2,10 @@
   "name": "password-generator",
   "private": true,
   "version": "1.0.0",
+  "author": {
+    "name": "Rafael Pereira",
+    "email": "orafaeldev@gmail.com"
+  },
   "type": "module",
   "scripts": {
     "dev": "vite --open",
