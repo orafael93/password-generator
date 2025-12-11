@@ -2,6 +2,10 @@
 
 Um gerador de senhas construído com React, TypeScript e Styled Components. Este projeto foi desenvolvido como um desafio do Front-end Mentor.
 
+## 🎬 Demonstração
+
+![Demonstração do Password Generator](./project-in-action.gif)
+
 ## 📋 Sobre o Projeto
 
 O Password Generator é uma aplicação web que permite aos usuários gerar senhas seguras e personalizadas de acordo com suas necessidades. Com uma interface intuitiva e moderna, você pode criar senhas fortes com diferentes combinações de caracteres e comprimentos variados.
