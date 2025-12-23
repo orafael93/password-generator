@@ -1,117 +1,100 @@
 # 🔐 Password Generator
 
-Um gerador de senhas construído com React, TypeScript e Styled Components. Este projeto foi desenvolvido como um desafio do Front-end Mentor.
+A robust password generator application built with **React**, **TypeScript**, and **Styled Components**.
 
-## 🎬 Demonstração
+## 🎬 Demo
 
-![Demonstração do Password Generator](./project-in-action.gif)
+![Password Generator Demo](./project-in-action.gif)
 
-## 📋 Sobre o Projeto
+## 📋 About the Project
 
-O Password Generator é uma aplicação web que permite aos usuários gerar senhas seguras e personalizadas de acordo com suas necessidades. Com uma interface intuitiva e moderna, você pode criar senhas fortes com diferentes combinações de caracteres e comprimentos variados.
+This application allows users to generate secure and customized passwords. It features a modern, intuitive interface where you can define the password length and choose which character types to include.
 
-## ✨ Principais Funcionalidades
+The main goal of this project was to deliver a high-quality application with a strong focus on **clean code**, **type safety**, and **user experience**.
 
-- **Geração de Senhas Personalizadas**: Crie senhas com comprimento ajustável (até 20 caracteres)
-- **Múltiplas Opções de Caracteres**:
-  - Letras minúsculas (a-z)
-  - Letras maiúsculas (A-Z)
-  - Números (0-9)
-  - Símbolos especiais (!@#$%^&\*, etc.)
-- **Indicador de Força**: Visualize a força da senha gerada em tempo real
-- **Copiar para Área de Transferência**: Copie a senha gerada com um único clique
-- **Interface Responsiva**: Design adaptável para diferentes tamanhos de tela
-- **Feedback Visual**: Animações e indicadores visuais para melhor experiência do usuário
+## ✨ Key Features
 
-## 🛠️ Tecnologias Utilizadas
+- **Customizable Passwords**: Adjust the password length (up to 20 characters) using an interactive slider.
+- **Character Options**:
+  - Uppercase letters (A-Z)
+  - Lowercase letters (a-z)
+  - Numbers (0-9)
+  - Symbols (!@#$%^&\*)
+- **Strength Meter**: Real-time visual feedback that calculates the strength of your password based on the selected options.
+- **Clipboard Integration**: Copy the generated password to your clipboard with a single click, featuring instant visual feedback.
+- **Responsive Design**: A layout that adapts perfectly to different screen sizes.
+
+## 💡 Technical Highlights
+
+### Clean Code and Type Safety
+
+This project is built with **TypeScript** to ensure the code is robust, scalable, and easy to maintain. Strict typing helps prevent errors and improves the overall development workflow.
+
+### Componentization with Styled Components
+
+The UI is constructed using **Styled Components**, following a modular design system. This approach keeps the styles organized, scoped to specific components, and easy to manage.
+
+### Interactive UI & UX
+
+Great attention was paid to the details of the user experience. Features like the dynamic **strength meter** and the **copy-to-clipboard** feedback make the application feel responsive and professional.
+
+## 🛠️ Technologies Used
 
 - **React**
 - **TypeScript**
 - **Styled Components**
 - **Vite**
-- **ESLint**
-- **Prettier**
+- **ESLint** & **Prettier**
 
-  ## 🚀 Como Rodar o Projeto
+## 🚀 How to Run the Project
 
-### Pré-requisitos
+### Prerequisites
 
-Certifique-se de ter instalado em sua máquina:
+Make sure you have the following installed:
 
-- [Node.js](https://nodejs.org/) (versão 14 ou superior)
-- [npm](https://www.npmjs.com/) ou [yarn](https://yarnpkg.com/)
+- [Node.js](https://nodejs.org/) (version 14 or higher)
+- [npm](https://www.npmjs.com/) or [yarn](https://yarnpkg.com/)
 
-### Instalação
+### Installation
 
-1. Clone o repositório:
+1. Clone the repository:
 
 ```bash
 git clone https://github.com/orafael93/password-generator.git
 ```
 
-2. Navegue até o diretório do projeto:
+2. Navigate to the project directory:
 
 ```bash
 cd password-generator
 ```
 
-3. Instale as dependências:
+3. Install dependencies:
 
 ```bash
 npm install
 ```
 
-### Executando em Modo de Desenvolvimento
+### Running in Development Mode
 
-Para iniciar o servidor de desenvolvimento:
+To start the development server:
 
 ```bash
 npm run dev
 ```
 
-A aplicação será aberta automaticamente no seu navegador padrão em `http://localhost:5173`
+The application will automatically open in your default browser at `http://localhost:5173`.
 
-### Scripts Disponíveis
+### Available Scripts
 
-- `npm run dev` - Inicia o servidor de desenvolvimento
-- `npm run build` - Cria a build de produção
-- `npm run preview` - Visualiza a build de produção localmente
-- `npm run lint` - Executa o linter para verificar problemas no código
+- `npm run dev` - Starts the development server.
+- `npm run build` - Builds the app for production.
+- `npm run preview` - Previews the production build locally.
+- `npm run lint` - Runs the linter to check for code issues.
 
-## 🎨 Funcionalidades
-
-### Controle de Comprimento
-
-Ajuste o comprimento da senha usando um slider interativo, variando de 1 a 20 caracteres.
-
-### Seleção de Caracteres
-
-Escolha quais tipos de caracteres incluir na senha através de checkboxes:
-
-- Letras minúsculas
-- Letras maiúsculas
-- Números
-- Símbolos
-
-### Indicador de Força
-
-O aplicativo avalia automaticamente a força da senha com base nos critérios selecionados e exibe um indicador visual.
-
-### Copiar Senha
-
-Clique no ícone de copiar para transferir a senha gerada para a área de transferência, com feedback visual de confirmação.
-
-## 👨‍💻 Autor
+## 👨‍💻 Author
 
 **Rafael Pereira**
 
 - Email: orafaeldev@gmail.com
 - GitHub: [@orafael93](https://github.com/orafael93)
-
-## 📄 Licença
-
-Este projeto é privado e foi desenvolvido para fins educacionais.
-
-## 🚀 Agradecimentos
-
-- [Frontend Mentor](https://www.frontendmentor.io/) pelo desafio
