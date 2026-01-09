@@ -12,10 +12,6 @@ This application allows users to generate secure and customized passwords. It fe
 
 The main goal of this project was to deliver a high-quality application with a strong focus on **clean code**, **type safety**, and **user experience**.
 
-## 🔗 Live Preview
-
-Check out the live version of the application here: [https://orafael.dev/password-generator/](https://orafael.dev/password-generator/)
-
 ## ✨ Key Features
 
 - **Customizable Passwords**: Adjust the password length (up to 20 characters) using an interactive slider.
