@@ -97,4 +97,4 @@ The application will automatically open in your default browser at `http://local
 **Rafael Pereira**
 
 - Email: orafaeldev@gmail.com
-- GitHub: [@orafael93](https://github.com/orafael93)
+- GitHub: [@orafaeldev](https://github.com/orafaeldev)
